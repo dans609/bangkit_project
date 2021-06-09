@@ -1,0 +1,85 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AllMatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="MatchWrap" parent="AllMatch">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AllMatch.PrimaryBackground">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="MediumImageSize">
+        <item name="android:layout_width">@dimen/medium_image_size</item>
+        <item name="android:layout_height">@dimen/medium_image_size</item>
+    </style>
+
+    <style name="MediumImageSize.LargeTopBarrier">
+        <item name="android:layout_marginTop">@dimen/large_const_barrier_size</item>
+    </style>
+
+    <style name="MatchWrap.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <style name="MatchWrap.TextInputLayout.UsernameAppearances">
+        <item name="android:hint">Input Username</item>
+        <item name="hintTextAppearance">@style/HintTextAppearance</item>
+        <item name="shapeAppearance">@style/ShapeAppearance</item>
+        <item name="startIconDrawable">@drawable/ic_person</item>
+        <item name="startIconTint">@color/colorPrimary</item>
+        <item name="endIconTint">@color/colorWarning</item>
+        <item name="endIconMode">clear_text</item>
+    </style>
+
+    <style name="MatchWrap.TextInputLayout.PasswordAppearances">
+        <item name="android:hint">Input Password</item>
+        <item name="hintTextAppearance">@style/HintTextAppearance</item>
+        <item name="shapeAppearance">@style/ShapeAppearance</item>
+        <item name="startIconDrawable">@drawable/ic_lock</item>
+        <item name="startIconTint">@color/colorPrimary</item>
+        <item name="endIconTint">@color/colorIconGray</item>
+        <item name="endIconMode">password_toggle</item>
+    </style>
+
+    <style name="ShapeAppearance">
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="TextAppearance">
+        <item name="android:fontFamily">@font/roboto_reg</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <style name="HintTextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:fontFamily">@font/open_sans_reg</item>
+        <item name="hintTextColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

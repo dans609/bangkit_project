@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">HypertensionApp</string>
+    <string name="info_for_create_account">Click this if you have no account</string>
+    <string name="wave_description">Wave Bottom</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="no_account_text">Do not have an account?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cd_content_container">Content container</string>
+    <string name="cd_heart_ico">heart icon</string>
+    <string name="cd_diagnose_ico">Image Diagnose</string>
+    <string name="lang_pref">Language Preferences</string>
+    <string name="faq_string">FAQ</string>
+    <string name="rate_string">Rate us</string>
+    <string name="about_description">About Description</string>
+    <string name="lorem_dummy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat nulla sem, in tincidunt sem ullamcorper eget. Vivamus cursus commodo lectus, nec pharetra mauris. Quisque aliquet lacus eu nisi efficitur vulputate. Cras varius id quam quis convallis. Donec eu mollis lacus, non finibus ante. lorem ipsum dolor sit amet consectur adispicing</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/language_preferences"
+        android:title="@string/lang_pref"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/faq_list"
+        android:icon="@drawable/ic_person"
+        android:orderInCategory="100"
+        android:title="@string/faq_string"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/rate_us_menu"
+        android:title="@string/rate_string"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:icon="@drawable/heart_image" />
+
+</menu>
