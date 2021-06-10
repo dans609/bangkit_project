@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".view.home.HomeActivity"
-            android:theme="@style/Widget.AppCompat.ActionBar"
+            android:theme="@style/AndroidxTheme"
             android:label="@string/title_activity_home">
         </activity>
         <activity android:name=".view.sign.up.SignUpActivity"
