@@ -14,7 +14,8 @@
             android:theme="@style/Widget.AppCompat.ActionBar"
             android:label="@string/title_activity_home">
         </activity>
-        <activity android:name=".view.sign.up.SignUpActivity" />
+        <activity android:name=".view.sign.up.SignUpActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".view.sign.in.SignInActivity"
             android:parentActivityName=".view.home.HomeActivity"
