@@ -1,17 +1,17 @@
-package com.danshouseproject.project.hypertensionapp
+package com.danshouseproject.project.hypertensionapp.view.diagnose
 
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
-import com.danshouseproject.project.hypertensionapp.databinding.FragmentAboutBinding
+import com.danshouseproject.project.hypertensionapp.R
+import com.danshouseproject.project.hypertensionapp.databinding.FragmentDiagnoseBinding
 import com.danshouseproject.project.hypertensionapp.view.home.HomeActivity
 
-class AboutFragment : Fragment() {
+class DiagnoseFragment : Fragment() {
 
-    private var _binding: FragmentAboutBinding? = null
+    private var _binding: FragmentDiagnoseBinding? = null
     private val binding
         get() = _binding
 
@@ -20,7 +20,7 @@ class AboutFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         (activity as HomeActivity).supportActionBar?.hide()
-        _binding = FragmentAboutBinding.inflate(inflater, container, false)
+        _binding = FragmentDiagnoseBinding.inflate(inflater, container, false)
         return binding?.root
     }
 
@@ -28,8 +28,11 @@ class AboutFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
+    override fun onDestroyView() {
+        super.onDestroyView()
         _binding = null
     }
+
+
+
 }

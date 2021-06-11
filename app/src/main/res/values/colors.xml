@@ -6,4 +6,5 @@
     <color name="colorPlaceholder">#C8C8C8</color>
     <color name="colorWarning">#F04646</color>
     <color name="colorIconGray">#979797</color>
+    <color name="aestheticBlack">#505A64</color>
 </resources>

@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
-import androidx.navigation.findNavController
 import com.danshouseproject.project.hypertensionapp.R
 import com.danshouseproject.project.hypertensionapp.databinding.FragmentHomeBinding
 
@@ -20,6 +19,7 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        (activity as HomeActivity).supportActionBar?.show()
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding?.root
     }
@@ -27,17 +27,14 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding?.let {
-            it.containerDiagnosePage.setOnClickListener(navigationOnClick(R.id.action_homeFragment_to_diagnoseActivity))
+            it.containerDiagnosePage.setOnClickListener(navigationOnClick(R.id.action_homeFragment_to_diagnoseFragment))
             it.containerAboutPage.setOnClickListener(navigationOnClick(R.id.action_homeFragment_to_aboutFragment))
         }
 
     }
 
-
-
     private fun navigationOnClick(id: Int): View.OnClickListener =
         Navigation.createNavigateOnClickListener(id)
-
 
     override fun onDestroy() {
         super.onDestroy()

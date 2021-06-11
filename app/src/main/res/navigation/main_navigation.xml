@@ -18,12 +18,8 @@
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
         <action
-            android:id="@+id/action_homeFragment_to_diagnoseActivity"
-            app:destination="@id/diagnoseActivity"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
-            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+            android:id="@+id/action_homeFragment_to_diagnoseFragment"
+            app:destination="@id/diagnoseFragment" />
 
     </fragment>
 
@@ -33,14 +29,23 @@
         android:label="fragment_about"
         tools:layout="@layout/fragment_about" />
     <activity
-        android:id="@+id/diagnoseActivity"
-        android:name="com.danshouseproject.project.hypertensionapp.view.diagnose.DiagnoseActivity"
-        android:label="activity_diagnose"
-        tools:layout="@layout/activity_diagnose" />
-    <activity
         android:id="@+id/signInActivity"
         android:name="com.danshouseproject.project.hypertensionapp.view.sign.in.SignInActivity"
         android:label="activity_sign_in"
         tools:layout="@layout/activity_sign_in" />
+    <fragment
+        android:id="@+id/questionFragment"
+        android:name="com.danshouseproject.project.hypertensionapp.view.diagnose.QuestionFragment"
+        android:label="fragment_question"
+        tools:layout="@layout/fragment_question" />
+    <fragment
+        android:id="@+id/diagnoseFragment"
+        android:name="com.danshouseproject.project.hypertensionapp.view.diagnose.DiagnoseFragment"
+        android:label="fragment_diagnose"
+        tools:layout="@layout/fragment_diagnose" >
+        <action
+            android:id="@+id/action_diagnoseFragment_to_questionFragment"
+            app:destination="@id/questionFragment" />
+    </fragment>
 
 </navigation>
